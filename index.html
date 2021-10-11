@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<HEAD>
+
+<TITLE>Genomics and Gene Regulation @ Yale-NUS</TITLE>
+<!--This design borrows extensively from Alison Feders's site https://github.com/federlab/federlab.github.io/
+
+<STYLE type="text/css">
+
+body
+{
+margin: 20px;
+padding: 20px;
+font-family: "Avenir", sans-serif, Courier, Serif;
+
+}
+
+DIV.content
+{
+border: 0px solid #5f5f5f;
+width: 550px;
+margin: 0;
+padding: 1em;
+position: absolute;
+background-color: #FFFFFF;
+left: 240px;
+top: 20px;
+}
+
+DIV.bar
+{
+border: 0px solid #5f5f5f;
+width: 200px;
+height: 300px;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 65px;
+top: 45px;
+text-align: right;
+}
+
+
+p.link
+{
+color: black;
+font-family: "Avenir", sans-serif, Courier, Serif;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+}
+
+
+a:link, a:link.inlink, a:visited.inlink, a:visited
+{
+color: #0000FF;
+}
+
+
+a:link.minlink, a:visited.minlink
+{
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover, a:hover.inlink, a:hover.minlink
+{
+color: #EEC900;
+text-decoration: none;
+font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+margin: 0;
+padding: 0;
+left: 50px;
+bottom: 20px;
+  }
+
+
+
+
+#contact
+{
+display: none;
+}
+
+#abstract
+{
+display: block;
+}
+
+#research
+{
+display: none;
+}
+
+#publications
+{
+display: none;
+}
+
+#people
+{
+display: none;
+}
+
+#media
+{
+display: none;
+}
+
+#lab
+{
+display: none;
+}
+
+#news
+{
+display: none;
+}
+
+#teaching
+{
+display: none;
+}
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+
+function homeShow()
+{
+document.getElementById("abstract").style.display="block";
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("teaching").style.display="none";
+}
+
+function contactShow()
+{
+document.getElementById("contact").style.display="block";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("teaching").style.display="none";
+}
+
+function publicationsShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="block";
+document.getElementById("people").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("teaching").style.display="none";
+}
+
+function peopleShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="block";
+document.getElementById("abstract").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("teaching").style.display="none";
+}
+
+
+function researchShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="block";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("teaching").style.display="none";
+}
+
+
+function newsShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="block";
+document.getElementById("teaching").style.display="none";
+}
+
+function teachingShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+document.getElementById("news").style.display="none";
+document.getElementById("teaching").style.display="block";
+}
+
+</SCRIPT>
+
+</HEAD>
+
+
+<BODY>
+
+
+
+
+
+<DIV class="bar">
+
+    <img src = "img/logo.png" width = "50%" height = "34%"
+    style="float:left;margin:0 15px 0 0;" >
+
+    <br> <br> <br> <br> <br>
+<P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
+<P class="link"><A href="#" class="minlink" onclick="researchShow();">Research</A></P>
+<P class="link"><A href="#" class="minlink" onclick="publicationsShow();">Publications</A></P>
+<P class="link"><A href="#" class="minlink" onclick="peopleShow();">Team</A></P>
+<P class="link"><A href="#" class="minlink" onclick="newsShow();">News</A></P>
+<P class="link"><A href="#" class="minlink" onclick="teachingShow();">Teaching</A></P>
+<P class="link"><A href="#" class="minlink" onclick="contactShow();">Contact</A></P>
+
+</DIV>
+
+
+
+<DIV class="content">
+  
+
+
+  <DIV id="abstract">
+
+    <h2> Genomics and Gene Regulation </h2>
+<hr>
+
+
+
+    </DIV>
+
+      <DIV id="research">
+
+<h2> Research </h2>
+<hr>
+
+	 
+</DIV>
+
+<DIV id="news">
+
+<h2> News </h2>
+<hr>
+
+    <ul>
+	<li> <b>October 2021: </b> Glenda Chin joins the lab for her capstone project
+
+	      </ul>
+</DIV>
+
+
+
+
+  <DIV id="contact">
+
+<h2>Contact</h2>
+      <hr>
+
+      E-mail: nathan.harmston (at) yale-nus.edu.sg<br><br>
+      
+
+</DIV>
+
+
+<DIV id="publications">
+<h2>Publications</h2>
+    <hr>
+    
+You can find a current and complete list of publications on <a href =
+  "https://scholar.google.com/citations?user=BdHw1m4AAAAJ&hl=en&oi=ao" class =
+    "minlink">Google scholar</a>.
+
+    <hr>
+   
+
+  </DIV>
+
+<DIV id="people">
+  
+<h2>Team</h2>
+
+<hr>
+
+<img src = "img/people/nph.jpg" width = "30%" height = "30%" style="float:left;margin:5px 15px 5px 5px;">
+<h3>Nathan Harmston</h3>
+Principal investigator
+
+ <hr>
+
+<img src = "img/people/Ellora.jpg" width = "30%" height = "30%" style="float:left;margin:5px 15px 5px 5px;">
+<h3>Ellora Hui Zhen Chua</h3>
+Research Assistant <br>
+   <br>
+Ellora received her BS in Computational Biology at National University of Singapore. She is currently (a Research Assistant at Yale-NUS College) focusing on bioinformatics analysis of NGS data in aging and cancer.
+    <br> <br>
+
+
+    <hr>
+
+<img src = "img/people/Sara.jpeg" width = "30%" height = "30%" style="float:left;margin:5px 15px 5px 5px;">
+<h3>Sara Haghani</h3>
+Research Assistant<br>
+   <br>
+Sara received her BSc in Life Sciences at Yale-NUS College. She is currently working to identify the role of β-catenin dependent and independent genes in the biology of Wnt-addicted pancreatic cancer with RNF-43 mutations. <hr>
+
+   
+
+
+    <h2>Previous lab members</h2>
+
+    <hr>
+<h3> </h3>
+
+  </DIV>
+
+
+
+  
+</DIV>
+
+
+</BODY>
+
+</html>
