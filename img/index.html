@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genomics and Gene Regulation @ Cardiff University</title>
+  <meta name="description" content="Computational and statistical genomics group led by Dr Nathan Harmston at Cardiff University, studying gene regulation in development and cancer.">
+
+  <!-- OpenGraph / Social Preview Metadata -->
+  <meta property="og:title" content="Harmston Lab — Genomics and Gene Regulation @ Cardiff University">
+  <meta property="og:description" content="Computational and statistical genomics group led by Dr Nathan Harmston at Cardiff University, studying gene regulation in development and cancer.">
+  <meta property="og:url" content="https://harmstonlab.github.io/">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --accent: #0969da;
+      --accent-hover: #0550ae;
+      --border: #d0d7de;
+      --surface: #f6f8fa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .site-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    section {
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 4rem;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.25;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin: 0 0 1rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.35rem;
+      margin: 0 0 1rem;
+    }
+
+    li {
+      margin-bottom: 0.55rem;
+    }
+
+    .pub-item {
+      margin-bottom: 1.25rem;
+    }
+
+    .pub-title {
+      font-weight: 600;
+      display: block;
+    }
+
+    .pub-links {
+      display: block;
+      font-size: 0.92rem;
+      margin: 0.15rem 0;
+    }
+
+    .pub-links a {
+      margin-right: 0.45rem;
+    }
+
+    .pub-authors {
+      display: block;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .team-member {
+      margin-bottom: 1.25rem;
+    }
+
+    .team-role {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-top: 1rem;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    details ul {
+      margin-top: 0.85rem;
+      margin-bottom: 0.25rem;
+    }
+
+    footer {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 2.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a class="site-title" href="#home">Genomics and Gene Regulation @ Cardiff University</a>
+      <nav aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
+        <a href="#team">Team</a>
+        <a href="#join">Join</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / RESEARCH OVERVIEW -->
+    <section id="home">
+      <h1>Genomics and Gene Regulation</h1>
+      <p>The Genomics and Gene Regulation group at Cardiff University is interested in understanding how gene expression is regulated during both development and in a disease context, with a focus on cancer.</p>
+      <p>We use a number of computational and statistical approaches to ask and answer questions about biological systems, often in close collaboration with experimental biologists. Our research interests encompass a variety of themes, including understanding how the 3D structure around important transcription factors influences genome evolution and identifying the genomic and epigenetic features that determine whether a gene is regulated by a specific developmental signalling pathway.</p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>You can find a current and complete list of publications on <a href="https://scholar.google.com/">Google Scholar</a> and <a href="https://orcid.org/0000-0002-8589-2938">ORCID</a>.</p>
+
+      <div class="pub-item">
+        <span class="pub-title">Single cell RNA sequencing of <em>D. pseudoobscura</em> testes reveals transcriptional signatures of heteromorphic spermatogenesis (2026)</span>
+        <span class="pub-links"><a href="https://doi.org/10.64898/2026.07.21.739797">[Preprint @ bioRxiv]</a></span>
+        <span class="pub-authors">Fiona Messer, April ..., Nathan Harmston, Helen White-Cooper <!-- TODO: verify middle authors --></span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Sarcopenia promotes tumorigenesis by disrupting NOTCH-SDC2-regulated biogenesis of muscle-derived extracellular vesicles (2026)</span>
+        <span class="pub-links"><a href="https://doi.org/10.1038/s41467-026-72410-y">[Manuscript @ Nature Communications]</a></span>
+        <span class="pub-authors">Kah Yong Goh, Wen Xing Lee, ..., Nathan Harmston, Hong-Wen Tang <!-- TODO: verify middle authors --></span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Identification of Wnt-regulated genes that are repressed by, or independent of, &beta;-catenin (2026)</span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.1111/febs.70417">[Manuscript @ The FEBS Journal]</a>
+          <a href="https://doi.org/10.1101/2025.04.06.647504">[Preprint]</a>
+          <a href="https://github.com/harmstonlab/wnt_nre_manuscript">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Shiyang Liu, Sara Haghani, Enrico Petretto, Babita Madan, Nathan Harmston, David M Virshup</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Exercise suppresses DEAF1 to normalize mTORC1 activity and reverse muscle aging (2025)</span>
+        <span class="pub-links"><a href="https://doi.org/10.1073/pnas.2508893122">[Manuscript @ PNAS]</a></span>
+        <span class="pub-authors">Sze Mun Choy, Kah Yong Goh, Wen Xing Lee, Weiyi Jiang, Qian Gou, ..., Gopal Krishnan, Shi Chee Ong, Kenon Chua, Nathan Harmston, Hong-Wen Tang <!-- TODO: verify middle authors --></span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">ATF4:p52 Complex activates oncogenic enhancers in multiple myeloma via p300/CBP recruitment to regulate BACH1 (2025)</span>
+        <span class="pub-links"><a href="https://doi.org/10.1016/j.canlet.2025.217727">[Manuscript @ Cancer Letters]</a></span>
+        <span class="pub-authors">Daniel A Ang, Nathan Harmston, Yinghui Li</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">FOXO-regulated DEAF1 controls muscle regeneration through autophagy (2024)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ Autophagy]</a>
+          <a href="https://github.com/harmstonlab/Goh_et_al_deaf1">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Kah Yong Goh, Wen Xing Lee, Sze Mun Choy, Gopal Krishnan Priyadarshini, Kenon Chua, Qian Hui Tan, Shin Yi Low, Hui San Chin, Chee Seng Wong, Shu-Yi Huang, Nai Yang Fu, Jun Nishiyama, Nathan Harmston, Hong-Wen Tang</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Aberrant non-canonical NF-&kappa;B signalling reprograms the epigenome landscape to drive oncogenic transcriptomes in multiple myeloma (2024)</span>
+        <span class="pub-links"><a href="#">[Manuscript @ Nature Communications]</a></span>
+        <span class="pub-authors">Daniel A Ang, Jean-Michel Carter, Kamalakshi Deka, Joel HL Tan, Jianbiao Zhou, Qingfeng Chen, Wee Joo Chng, Nathan Harmston, Yinghui Li</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">The Wnt co-receptor PTK7/Otk and Its Homolog Otk-2 in neurogenesis and patterning (2024)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ Cells]</a>
+          <a href="#">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Qian Hui Tan, Agimaa Otgonbaatar, Prameet Kaur, Angelica Faye Ga, Nathan P Harmston, Nicholas S Tolwinski</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">ggbulksurv: An R package for easy Drosophila and C. elegans survival analysis (2024)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ microPublication Biology]</a>
+          <a href="https://github.com/harmstonlab/ggbulksurv">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Qian Hui Tan, Nathan Harmston, Nicholas S Tolwinski</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">The cholesterol biosynthesis enzyme FAXDC2 couples Wnt/&beta;-catenin to RTK/MAPK signaling (2024)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ JCI]</a>
+          <a href="#">[Preprint]</a>
+          <a href="#">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Babita Madan, Shawn Wadia, Siddhi Patnaik, Nathan Harmston, Emile Tan, Iain Bee Huat Tan, W. David Nes, Enrico Petretto, David M. Virshup</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">A high-resolution map of human RNA translation (2022)</span>
+        <span class="pub-links"><a href="#">[Manuscript @ Molecular Cell]</a></span>
+        <span class="pub-authors">Sonia P Chothani, Eleonora Adami, Anissa A Widjaja, Sarah R Langley, Sivakumar Viswanathan, Chee Jian Pua, Nevin Tham Zhihao, Nathan Harmston, Giuseppe D'agostino, Nicola Whiffin, Wang Mao, John F Ouyang, Wei Wen Lim, Shiqi Lim, Cheryl QE Lee, Alexandra Grubman, Joseph Chen, JP Kovalik, Karl Tryggvason, Jose M Polo, Lena Ho, Stuart A Cook, Owen JL Rackham, Sebastian Schafer</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">A p300/GATA6 axis determines differentiation and Wnt dependency in pancreatic cancer models (2022)</span>
+        <span class="pub-links"><a href="#">[Manuscript @ The Journal of Clinical Investigation]</a></span>
+        <span class="pub-authors">Z Zhong, N Harmston, KC Wood, B Madan, DM Virshup</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Combining Stem Cell Rejuvenation and Senescence Targeting to Synergistically Extend Lifespan (2022)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ Ageing]</a>
+          <a href="#">[Preprint]</a>
+          <a href="#">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Prameet Kaur, Agimaa Otgonbaatar, Anupriya Ramamoorthy, Ellora Hui Zhen Chua, Nathan Harmston, Jan Gruber, Nicholas S. Tolwinski</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">The importance of considering regulatory domains in genome-wide analyses &ndash; the nearest gene is often wrong! (2022)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ Biology Open]</a>
+          <a href="#">[Future leader to watch &ndash; Nathan Harmston]</a>
+          <a href="#">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Ellora Hui Zhen Chua, Samen Yasar, Nathan Harmston</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Wnt Signaling Rescues Amyloid Beta-Induced Gut Stem Cell Loss (2022)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ Cells]</a>
+          <a href="#">[Preprint]</a>
+          <a href="https://github.com/harmstonlab/Ab">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Prameet Kaur, Ellora Hui Zhen Chua, Wen Kin Lim, Nathan Harmston, Nicholas S. Tolwinski</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">A Non-Canonical Raf Function Is Required for Dorsal-Ventral Patterning During Drosophila Embryogenesis (2022)</span>
+        <span class="pub-links">
+          <a href="#">[Manuscript @ Scientific Reports]</a>
+          <a href="#">[Preprint]</a>
+          <a href="#">[GitHub]</a>
+        </span>
+        <span class="pub-authors">Jay B. Lusk, Ellora Hui Zhen Chua, Prameet Kaur, Isabelle Chiao Han Sung, Wen Kin Lim, Vanessa Yuk Man Lam, Nathan Harmston, Nicholas S. Tolwinski</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">WNT inhibition creates a BRCA&#8208;like state in Wnt&#8208;addicted cancer (2021)</span>
+        <span class="pub-links"><a href="#">[Manuscript @ EMBO Molecular Medicine]</a></span>
+        <span class="pub-authors">Amanpreet Kaur, Jun Yi Stanley Lim, Sugunavathi Sepramaniam, Siddhi Patnaik, Nathan Harmston, May Ann Lee, Enrico Petretto, David M Virshup, Babita Madan</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Widespread repression of gene expression in cancer by a Wnt/&beta;-catenin/MAPK pathway (2021)</span>
+        <span class="pub-links"><a href="#">[Manuscript @ Cancer Research]</a></span>
+        <span class="pub-authors">Nathan Harmston, Jun Yi Stanley Lim, Oriol Arqu&eacute;s, H&eacute;ctor G Palmer, Enrico Petretto, David M Virshup, Babita Madan</span>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-title">Regulation in common: Sponge to zebrafish (2020)</span>
+        <span class="pub-links"><a href="#">[Manuscript @ Science]</a></span>
+        <span class="pub-authors">Nathan Harmston</span>
+      </div>
+    </section>
+
+    <!-- SOFTWARE & CODE -->
+    <section id="software">
+      <h2>Software &amp; Code</h2>
+      <p>We are committed to open, reproducible computational biology. All software tools and analysis pipelines developed in the lab are available on the <a href="https://github.com/harmstonlab">Harmston Lab GitHub</a>.</p>
+
+      <h3>Packages &amp; Tools</h3>
+      <ul>
+        <li><strong><a href="https://github.com/harmstonlab/ggbulksurv">ggbulksurv</a></strong> &mdash; An R package for streamlined survival analysis, statistical testing, and publication-ready plotting of <em>Drosophila</em> and <em>C. elegans</em> lifespan experiments (<em>microPublication Biology</em>, 2024).</li>
+      </ul>
+
+      <h3>Reproducible Research Repositories</h3>
+      <p>Code, workflows, and custom scripts accompanying our individual studies&mdash;including regulatory domain annotation, Wnt-regulated gene expression analyses, and single-cell transcriptomics&mdash;are linked directly alongside each paper in the <a href="#publications">Publications</a> section above and archived on <a href="https://github.com/harmstonlab">GitHub</a>.</p>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+      <h2>Team</h2>
+
+      <div class="team-member">
+        <h3>Nathan Harmston <span class="team-role">&mdash; Principal Investigator</span></h3>
+        <p>I am a computational biologist who leads the Genomics and Gene Regulation group at Cardiff University.<br>
+        Email: <a href="mailto:harmstonn@cardiff.ac.uk">harmstonn@cardiff.ac.uk</a></p>
+      </div>
+
+      <div class="team-member">
+        <h3>Kieran Howard <span class="team-role">&mdash; PhD Student</span></h3>
+        <p>Kieran's PhD is focused on understanding the conservation and function of regulatory elements using data-driven approaches.</p>
+      </div>
+
+      <h3>Previous lab members</h3>
+      <ul>
+        <li>Qian Hui &mdash; Research Assistant (2019&ndash;2022)</li>
+        <li>Ellora Chua &mdash; Research Assistant (2019&ndash;2022)</li>
+        <li>Sara Haghani &mdash; Capstone student (2020&ndash;2021) &amp; Research Assistant (2021&ndash;2022)</li>
+        <li>Glenda Chin &mdash; Capstone student (2021&ndash;2022)</li>
+        <li>Bin Choi &mdash; Summer Research Project (2021)</li>
+        <li>Golam Rabbani &mdash; Summer Research Project (2021)</li>
+        <li>Anbazhagan Pavithra &mdash; Summer Research Project (2021)</li>
+        <li>Samen Yasar &mdash; Capstone student (2020&ndash;2021)</li>
+        <li>Raihanah Nabilah Fatinah &mdash; Summer Research Project (2020)</li>
+        <li>Maria Paula Leon Mora &mdash; Summer Research Project (2020)</li>
+        <li>Anjali Kannangath &mdash; Capstone student (2019&ndash;2020)</li>
+      </ul>
+    </section>
+
+    <!-- JOIN THE LAB -->
+    <section id="join">
+      <h2>Join the Lab</h2>
+      <p>We are always keen to hear from motivated computational and quantitative researchers interested in gene regulation, genome evolution, and cancer genomics. We welcome applicants from a range of backgrounds&mdash;including biology, bioinformatics, computer science, statistics, and physics&mdash;who want to work closely alongside experimental collaborators.</p>
+
+      <ul>
+        <li><strong>PhD Students:</strong> Funded PhD projects in the group are regularly advertised through the <strong>Cardiff University School of Biosciences</strong> and the <strong>BBSRC South West Biosciences Doctoral Training Partnership (SWBio DTP)</strong> (typically opening in the autumn for entry the following October). We also welcome inquiries from prospective students applying for external studentships or fellowships.</li>
+        <li><strong>Postdoctoral Researchers:</strong> While we do not currently have an open funded postdoc position, we are happy to support strong candidates interested in applying for independent fellowships (such as UKRI, Wellcome, EMBO, or Marie Sk&lstrok;odowska-Curie).</li>
+        <li><strong>Undergraduate &amp; MSc Students:</strong> If
