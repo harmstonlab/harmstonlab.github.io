@@ -162,8 +162,48 @@
       color: var(--muted);
     }
 
-    .team-member {
-      margin-bottom: 1.25rem;
+.team-member {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .team-photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .team-photo-placeholder {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 1px dashed var(--border);
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 1.1rem;
+      user-select: none;
+    }
+
+    .team-info h3 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 520px) {
+      .team-member {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
     }
 
     .team-role {
@@ -230,10 +270,18 @@
       <h2>Publications</h2>
       <p>You can find a current and complete list of publications on <a href="https://scholar.google.com/">Google Scholar</a> and <a href="https://orcid.org/0000-0002-8589-2938">ORCID</a>.</p>
 
+
+      <div class="pub-item">
+	<span class="pub-title">mLS-GKM: Efficient Multi-class Regulatory Sequence Classification with Gapped k-mer SVMs</span>
+	<span class="pub-links"><a href="https://arxiv.org/abs/2608.20576">[Preprint @ arXiv]</a></span>
+	<span class="pub-authors">Kieran Howard, Nathan Harmston</span>
+      </div>
+
+
       <div class="pub-item">
         <span class="pub-title">Single cell RNA sequencing of <em>D. pseudoobscura</em> testes reveals transcriptional signatures of heteromorphic spermatogenesis (2026)</span>
         <span class="pub-links"><a href="https://doi.org/10.64898/2026.07.21.739797">[Preprint @ bioRxiv]</a></span>
-        <span class="pub-authors">Fiona Messer, April ..., Nathan Harmston, Helen White-Cooper <!-- TODO: verify middle authors --></span>
+        <span class="pub-authors">Fiona Messer, April Talbot, Sabrina Williams, Nathan Harmston, Helen White-Cooper</span>
       </div>
 
       <div class="pub-item">
@@ -385,6 +433,7 @@
 
       <h3>Packages &amp; Tools</h3>
       <ul>
+	<li><strong><a href="https://github.com/harmstonlab/mLS-GKM">mLS-GKM</a></strong> &mdash;Efficient Multi-class Regulatory Sequence Classification with Gapped k-mer SVMs (arXiv 2026) </li>
         <li><strong><a href="https://github.com/harmstonlab/ggbulksurv">ggbulksurv</a></strong> &mdash; An R package for streamlined survival analysis, statistical testing, and publication-ready plotting of <em>Drosophila</em> and <em>C. elegans</em> lifespan experiments (<em>microPublication Biology</em>, 2024).</li>
       </ul>
 
@@ -397,15 +446,36 @@
       <h2>Team</h2>
 
       <div class="team-member">
+	<div class="team-photo-placeholder" aria-label="Nathan Harmston photo placeholder">
+        <img class="team-photo" src="img/people/profile_nh.jpg" alt="Nathan Harmston">
+        </div>
+        <div class="team-info">
         <h3>Nathan Harmston <span class="team-role">&mdash; Principal Investigator</span></h3>
         <p>I am a computational biologist who leads the Genomics and Gene Regulation group at Cardiff University.<br>
         Email: <a href="mailto:harmstonn@cardiff.ac.uk">harmstonn@cardiff.ac.uk</a></p>
       </div>
-
-      <div class="team-member">
-        <h3>Kieran Howard <span class="team-role">&mdash; PhD Student</span></h3>
-        <p>Kieran's PhD is focused on understanding the conservation and function of regulatory elements using data-driven approaches.</p>
       </div>
+
+     <div class="team-member">
+        <div class="team-photo-placeholder" aria-label="Kieran Howard photo placeholder">
+	<img class="team-photo" src="img/people/profile_kh.jpg" alt="Kieran Howard">
+	</div>
+        <div class="team-info">
+          <h3>Kieran Howard <span class="team-role">&mdash; PhD Student</span></h3>
+          <p>Kieran's PhD is focused on understanding the conservation and function of regulatory elements using data-driven approaches.</p>
+        </div>
+      </div>
+
+
+    <div class="team-member">
+        <div class="team-photo-placeholder" aria-label="Nikita Subramani photo placeholder">
+        <img class="team-photo" src="img/people/profile_ns.jpg" alt="Nikita Subramani">
+        </div>
+	 <div class="team-info">
+        <h3>Nikita Subramani<span class="team-role">&mdash; PhD Student</span></h3>
+	<p>Nikita's project is focused on identifying and characterising conserved non-coding elements in annelid genomes and how these are related to genome function and evolution</p>
+      </div>
+	</div>
 
       <h3>Previous lab members</h3>
       <ul>
@@ -431,4 +501,87 @@
       <ul>
         <li><strong>PhD Students:</strong> Funded PhD projects in the group are regularly advertised through the <strong>Cardiff University School of Biosciences</strong> and the <strong>BBSRC South West Biosciences Doctoral Training Partnership (SWBio DTP)</strong> (typically opening in the autumn for entry the following October). We also welcome inquiries from prospective students applying for external studentships or fellowships.</li>
         <li><strong>Postdoctoral Researchers:</strong> While we do not currently have an open funded postdoc position, we are happy to support strong candidates interested in applying for independent fellowships (such as UKRI, Wellcome, EMBO, or Marie Sk&lstrok;odowska-Curie).</li>
-        <li><strong>Undergraduate &amp; MSc Students:</strong> If
+	<li><strong>Undergraduate &amp; MSc Students:</strong> If you are a current Cardiff University student looking for a final-year dissertation, MSc project, or summer computational placement, please get in touch early in the academic year to discuss available projects.</li>	
+      </ul>
+
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul>
+	<li><strong>September 2026:</strong> Nikita Subramani joins the lab as a PhD student investigating the role that CNEs play in the genome evolution in annelids </li>
+        <li><strong>July 2026:</strong> New preprint posted: <em>Single cell RNA sequencing of D. pseudoobscura testes reveals transcriptional signatures of heteromorphic spermatogenesis</em> with Fiona Messer and Helen White-Cooper</li>
+        <li><strong>April 2026:</strong> <em>Sarcopenia promotes tumorigenesis by disrupting NOTCH-SDC2-regulated biogenesis of muscle-derived extracellular vesicles</em> is now published in <em>Nature Communications</em></li>
+        <li><strong>January 2026:</strong> <em>Identification of Wnt-regulated genes that are repressed by, or independent of, &beta;-catenin</em> is now published in <em>The FEBS Journal</em></li>
+        <li><strong>November 2025:</strong> <em>Exercise suppresses DEAF1 to normalize mTORC1 activity and reverse muscle aging</em> is now published in <em>PNAS</em></li>
+        <li><strong>May 2025:</strong> <em>ATF4:p52 Complex activates oncogenic enhancers in multiple myeloma via p300/CBP recruitment to regulate BACH1</em> is now published in <em>Cancer Letters</em></li>
+        <li><strong>April 2025:</strong> New preprint posted: <em>Identification of Wnt-regulated genes that are repressed by, or independent of, &beta;-catenin</em> with the Virshup and Madan labs</li>
+        <li><strong>September 2024:</strong> Kieran Howard joins the lab as a PhD student working to understand enhancer function and conservation</li>
+      </ul>
+
+
+      <details>
+        <summary>Older news (2019&ndash;2024)</summary>
+        <ul>
+          <li><strong>July 2024:</strong> <em>FOXO-regulated DEAF1 controls muscle regeneration through autophagy</em> is now published</li>
+          <li><strong>May 2024:</strong> <em>ggbulksurv: An R package for easy Drosophila and C. elegans survival analysis</em> is now out in <em>microPublication Biology</em></li>
+          <li><strong>March 2024:</strong> <em>Aberrant non-canonical NF-&kappa;B signalling reprograms the epigenome landscape to drive oncogenic transcriptomes in multiple myeloma</em> is now published as part of a collaboration with Dr. Yinghui Li's group at NTU, Singapore</li>
+          <li><strong>February 2024:</strong> <em>The Wnt Co-Receptor PTK7/Otk and Its Homolog Otk-2 in Neurogenesis and Patterning</em> is now published &ndash; congrats QH</li>
+          <li><strong>January 2024:</strong> <em>The cholesterol biosynthesis enzyme FAXDC2 couples Wnt/&beta;-catenin to RTK/MAPK signaling</em> is now published online</li>
+          <li><strong>December 2023:</strong> New preprint posted: <em>The cholesterol biosynthesis enzyme FAXDC2 couples Wnt/beta-catenin to RTK/MAPK signaling</em></li>
+          <li><strong>October 2022:</strong> <em>Combining stem cell rejuvenation and senescence targeting to synergistically extend lifespan</em> is now published</li>
+          <li><strong>August 2022:</strong> <em>A high-resolution map of human RNA translation</em> is now published</li>
+          <li><strong>June 2022:</strong> <em>A p300/GATA6 axis determines differentiation and Wnt dependency in pancreatic cancer models</em> is now published</li>
+          <li><strong>June 2022:</strong> <em>A non-canonical Raf function is required for dorsal&ndash;ventral patterning during Drosophila embryogenesis</em> is now published</li>
+          <li><strong>April 2022:</strong> New preprint posted: <em>Combining Stem Cell Rejuvenation and Senescence Targeting to Synergistically Extend Lifespan</em> as part of a collaboration with the Tolwinski and Gruber labs at Yale-NUS</li>
+          <li><strong>April 2022:</strong> New review paper published &ndash; <em>The importance of considering regulatory domains in genome-wide analyses &ndash; the nearest gene is often wrong!</em></li>
+          <li><strong>January 2022:</strong> <em>Wnt Signaling Rescues Amyloid Beta-Induced Gut Stem Cell Loss</em> now published</li>
+          <li><strong>September 2021:</strong> New preprint posted: <em>Wnt signaling rescues amyloid beta induced stem cell loss</em> as part of a collaboration with the Tolwinski lab at Yale-NUS</li>
+          <li><strong>August 2021:</strong> Glenda Chin joins the lab for her capstone project</li>
+          <li><strong>August 2021:</strong> Sara Haghani joins the lab as a Research Assistant</li>
+          <li><strong>July 2021:</strong> New preprint posted: <em>A Non-Canonical Raf Function Is Required for Dorsal-Ventral Patterning During Drosophila Embryogenesis</em> as part of a collaboration with the Tolwinski lab at Yale-NUS</li>
+          <li><strong>November 2020:</strong> Perspective on <em>Regulation in common: Sponge to zebrafish</em> now published in <em>Science</em></li>
+          <li><strong>November 2020:</strong> Our poster on <em>Analyses of mutational and structural variation in a cohort of anaplastic astrocytoma</em> has been accepted at Frontiers in Cancer Science, Singapore 2020</li>
+          <li><strong>August 2020:</strong> Samen Yasar and Sara Haghani join the lab for their capstone projects</li>
+          <li><strong>October 2019:</strong> Ellora Chua joins the lab as a Research Assistant</li>
+          <li><strong>August 2019:</strong> Anjali Kannangath joins the lab for her capstone project</li>
+          <li><strong>August 2019:</strong> Nathan presents on <em>TADs Are Ancient Features that Coincide with Metazoan Clusters of Noncoding Conservation</em> at (GRC) Genome Architecture in Cell Fate and Disease, Hong Kong 2019</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:harmstonn@cardiff.ac.uk">harmstonn@cardiff.ac.uk</a><br>
+        <strong>Location:</strong> School of Biosciences, Cardiff University, Cardiff, UK<br>
+        <strong>Profiles:</strong>
+        <a href="https://profiles.cardiff.ac.uk/staff/harmstonn">Cardiff University</a> &middot;
+        <a href="https://github.com/harmstonlab">GitHub</a> &middot;
+        <a href="https://orcid.org/0000-0002-8589-2938">ORCID</a> &middot;
+        <a href="https://scholar.google.com/citations?user=BdHw1m4AAAAJ&hl=en">Google Scholar</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Genomics and Gene Regulation Group &middot; School of Biosciences, Cardiff University
+  </footer>
+
+</body>
+</html>
+
+
+        <a href="https://scholar.google.com/citations?user=BdHw1m4AAAAJ&hl=en">Google Scholar</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Genomics and Gene Regulation Group &middot; School of Biosciences, Cardiff University
+  </footer>
+
+</body>
+</html>
+
